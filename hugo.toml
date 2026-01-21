@@ -5,6 +5,7 @@ timeZone = "Asia/Shanghai"
 theme = "paper"
 enableRobotsTXT = true
 canonifyURLs = true
+googleAnalytics = "G-HPDDF6YJ8K"
 
 [pagination]
   pagerSize = 10

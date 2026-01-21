@@ -1,0 +1,76 @@
+{{- define "main" -}}
+
+<!-- Tag Title -->
+{{- if and .Title (eq .Type "tags") -}}
+<h1 class="mb-14">#{{- .Title -}}</h1>
+{{- end -}}
+
+<!-- $pages -->
+{{- $pages := union .RegularPages .Sections -}}<!---->
+{{- if .IsHome -}}<!---->
+{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections -}}<!---->
+{{- end -}}
+
+<!-- Articles -->
+{{- $paginator := .Paginate $pages -}} {{- range $index, $page :=
+$paginator.Pages -}}<!---->
+
+<!-- Site Title Hero (only on first page, first item) -->
+{{- if and $.IsHome (eq $paginator.PageNumber 1) (eq $index 0) -}}<!---->
+<div class="mb-16 text-center">
+  <h1 class="site-hero-title text-4xl md:text-5xl font-bold tracking-tight text-slate-800 dark:text-slate-100 mb-4 uppercase">
+    {{- site.Title -}}
+  </h1>
+  <p class="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-8">
+    {{- site.Params.description -}}
+  </p>
+  <img
+    src="{{ `img/hero.jpg` | absURL }}"
+    alt="{{ site.Title }}"
+    class="mx-auto rounded-lg shadow-lg max-w-full"
+  />
+  <div class="mt-8 max-w-2xl mx-auto" style="text-align: left !important;">
+    <p class="text-xs font-bold italic uppercase tracking-wide" style="color: #4a5568; text-align: left !important;">
+      DISCLAIMER: THIS IS A WORK OF FICTION. ALL NAMES, CHARACTERS, PLACES, AND INCIDENTS ARE PRODUCTS OF THE AUTHOR'S IMAGINATION. ANY RESEMBLANCE TO ACTUAL PERSONS OR EVENTS IS PURELY COINCIDENTAL.
+    </p>
+  </div>
+</div>
+{{- end -}}
+
+<section class="relative my-10 first-of-type:mt-0 last-of-type:mb-0">
+  {{- if gt .Weight 0 -}}
+  <span class="mb-1 inline-block text-xs tracking-wider text-orange-500"
+    >Featured</span
+  >
+  {{- end -}}
+  <h2 class="my-0!">{{- .Title -}}</h2>
+  <time class="text-xs antialiased opacity-60"
+    >{{- .Date | time.Format ":date_medium" -}}
+    <span class="mx-1">&middot;</span>
+    {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end }}
+    read
+    </time
+  >
+  <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}"
+    >{{- .Title -}}</a
+  >
+</section>
+{{- end -}}
+
+<!-- Main Nav -->
+{{- if gt $paginator.TotalPages 1 -}}
+<nav class="mt-14 flex">
+  {{- if $paginator.HasPrev -}}
+  <a class="btn not-prose" href="{{- $paginator.Prev.URL -}}"
+    >← {{- i18n "prev_page" -}}</a
+  >
+  {{- end -}}<!---->
+  {{- if $paginator.HasNext -}}
+  <a class="btn not-prose ml-auto" href="{{- $paginator.Next.URL -}}"
+    >{{- i18n "next_page" -}} →</a
+  >
+  {{- end -}}
+</nav>
+{{- end -}}<!---->
+
+{{- end -}}

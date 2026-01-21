@@ -1,0 +1,65 @@
+baseURL = "https://remnants.herbertyang.xyz/"
+title = "Remnants of Globalization"
+languageCode = "en"
+timeZone = "Asia/Shanghai"
+theme = "paper"
+enableRobotsTXT = true
+canonifyURLs = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  # Color style for Paper theme
+  color = 'gray'  # Using gray as base, with custom CSS overrides for slate-blue
+
+  # Social links (no author bio on landing page)
+  twitter = 'herbertyang'
+
+  # Favicon settings
+  favicon = "img/favicon.ico"
+  appleTouchIcon = "img/apple-touch-icon.png"
+
+  # Description
+  description = "A collection of stories of Gen X who rode the wave of globalization and enjoyed its full visceral impact. The series recounts their aspirations, decisions, sweat, joys, and struggles, while those memories are still vivid, as if from yesterday."
+
+  # Social Media and SEO
+  enableOpenGraph = true
+  enableTwitterCards = true
+
+  # Default hero image for social media sharing
+  images = ["img/hero.jpg"]
+
+  # Copyright notice
+  copyright = "© 2025 Herbert Yang. All rights reserved."
+
+# Main menu
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 20
+
+# Enhanced sitemap configuration for better SEO
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+# Define URL links
+[permalinks]
+  posts = "/:slug"
+
+# RSS feed configuration for Buttondown
+[outputFormats]
+  [outputFormats.RSS]
+    mediatype = "application/rss+xml"
+    baseName = "feed"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]

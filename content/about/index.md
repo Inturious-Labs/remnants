@@ -16,7 +16,7 @@ The series is a feeble attempt to answer some questions on what got us this far,
 
 ![Bike](bike.jpg)
 
-**Herbert Yang** grew up a poster child of globalization. He has lived and worked in many cities in Asia, America, and Europe. He has developed a passion for both Eastern and Western cultures. He has made friends all over the world with diverse ethnic groups and cultural backgrounds. He has worked for Chinese, American, and European companies.
+**[Herbert Yang](https://herbertyang.xyz/docs/about/herbert-yang/)** grew up a poster child of globalization. He has lived and worked in many cities in Asia, America, and Europe. He has developed a passion for both Eastern and Western cultures. He has made friends all over the world with diverse ethnic groups and cultural backgrounds. He has worked for Chinese, American, and European companies.
 
 ## Subscribe
 

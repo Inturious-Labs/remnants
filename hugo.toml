@@ -38,13 +38,17 @@ googleAnalytics = "G-HPDDF6YJ8K"
 # Main menu
 [menu]
   [[menu.main]]
-    name = "Posts"
+    name = "Stories"
     url = "/posts/"
     weight = 10
   [[menu.main]]
     name = "People"
     url = "/people/"
     weight = 15
+  [[menu.main]]
+    name = "Cities"
+    url = "/cities/"
+    weight = 17
   [[menu.main]]
     name = "About"
     url = "/about/"
@@ -59,6 +63,7 @@ googleAnalytics = "G-HPDDF6YJ8K"
 # Taxonomies for character pages
 [taxonomies]
   person = "people"
+  city = "cities"
 
 # Define URL links
 [permalinks]

@@ -18,13 +18,6 @@ The series is a feeble attempt to answer some questions on what got us this far,
 
 **[Herbert Yang](https://herbertyang.xyz/docs/about/herbert-yang/)** grew up a poster child of globalization. He has lived and worked in many cities in Asia, America, and Europe. He has developed a passion for both Eastern and Western cultures. He has made friends all over the world with diverse ethnic groups and cultural backgrounds. He has worked for Chinese, American, and European companies.
 
-## Subscribe
-
-Get new stories delivered to your inbox:
-
-- **Email Newsletter**: Subscribe via [Buttondown](https://buttondown.com/remnants)
-- **RSS Feed**: [/feed.xml](/feed.xml)
-
 ## Disclaimer
 
 This is a work of fiction. Unless otherwise indicated, all the names, characters, businesses, places, events, and incidents in this series are either the product of the author's imagination or used in a fictitious manner. Any resemblance to actual persons, living or dead, or actual events is purely coincidental.

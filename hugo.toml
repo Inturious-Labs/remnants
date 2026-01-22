@@ -4,7 +4,7 @@ languageCode = "en"
 timeZone = "Asia/Shanghai"
 theme = "paper"
 enableRobotsTXT = true
-canonifyURLs = true
+canonifyURLs = false
 googleAnalytics = "G-HPDDF6YJ8K"
 
 [pagination]
@@ -16,13 +16,14 @@ googleAnalytics = "G-HPDDF6YJ8K"
 
   # Social links (no author bio on landing page)
   twitter = 'herbertyang'
+  github = 'https://github.com/Inturious-Labs/remnants'
 
   # Favicon settings
   favicon = "img/favicon.ico"
   appleTouchIcon = "img/apple-touch-icon.png"
 
   # Description
-  description = "A collection of stories of Gen X who rode the wave of globalization and enjoyed its full visceral impact. The series recounts their aspirations, decisions, sweat, joys, and struggles, while those memories are still vivid, as if from yesterday."
+  description = "A collection of stories of Gen X who rode the wave of globalization and enjoyed its full visceral impact. The series recounts their aspirations, decisions, sweat, joys, and struggles while exploring their next chapter."
 
   # Social Media and SEO
   enableOpenGraph = true
@@ -37,9 +38,21 @@ googleAnalytics = "G-HPDDF6YJ8K"
 # Main menu
 [menu]
   [[menu.main]]
-    name = "Posts"
-    url = "/posts/"
+    name = "Stories"
+    url = "/stories/"
     weight = 10
+  [[menu.main]]
+    name = "People"
+    url = "/people/"
+    weight = 15
+  [[menu.main]]
+    name = "Cities"
+    url = "/cities/"
+    weight = 17
+  [[menu.main]]
+    name = "Countries"
+    url = "/countries/"
+    weight = 18
   [[menu.main]]
     name = "About"
     url = "/about/"
@@ -50,6 +63,12 @@ googleAnalytics = "G-HPDDF6YJ8K"
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
+
+# Taxonomies for character pages
+[taxonomies]
+  person = "people"
+  city = "cities"
+  country = "countries"
 
 # Define URL links
 [permalinks]

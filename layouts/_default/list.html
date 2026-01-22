@@ -28,11 +28,15 @@ $paginator.Pages -}}<!---->
     src="{{ `img/hero.jpg` | absURL }}"
     alt="{{ site.Title }}"
     class="mx-auto rounded-lg shadow-lg max-w-full"
+    loading="lazy"
   />
   <div class="mt-8 max-w-2xl mx-auto" style="text-align: left !important;">
-    <p class="text-xs font-bold italic uppercase tracking-wide" style="color: #4a5568; text-align: left !important;">
+    <p class="text-xs font-bold italic uppercase tracking-wide" style="color: #9ca3af; text-align: left !important;">
       DISCLAIMER: THIS IS A WORK OF FICTION. ALL NAMES, CHARACTERS, PLACES, AND INCIDENTS ARE PRODUCTS OF THE AUTHOR'S IMAGINATION. ANY RESEMBLANCE TO ACTUAL PERSONS OR EVENTS IS PURELY COINCIDENTAL.
     </p>
+  </div>
+  <div class="mt-0">
+  {{- partial "newsletter-signup.html" . -}}
   </div>
 </div>
 {{- end -}}
@@ -51,7 +55,7 @@ $paginator.Pages -}}<!---->
     read
     </time
   >
-  <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}"
+  <a class="absolute inset-0 text-[0px]" href="{{- .RelPermalink -}}"
     >{{- .Title -}}</a
   >
 </section>

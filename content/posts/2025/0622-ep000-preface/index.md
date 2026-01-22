@@ -7,7 +7,7 @@ description: "Why I write The Remnants of Globalization"
 images:
   - beach.jpg
 people:
-  - Elendil
+  - Aldaron
 ---
 
 ![A lone figure gazing at a dissolving cityscape](beach.jpg)
@@ -40,7 +40,7 @@ The series is a feeble attempt to answer some questions on what got us this far,
 
 The goofy names for the characters come from the lore of J.R.R.Tolkien[^9]. It's a tongue-in-cheek reminder that it would be meaningless to pinpoint the characters to real-life personalities, and there is no need to become too emotionally attached to them. It's quite possible that they're all fictional anyway. If you find their stories to be similar to someone you might know, that would be a pure coincidence.
 
-Let's start with Elendil.
+Let's start with Aldaron.
 
 [^1]: The Third Plenary Session of the 11th Central Committee of the Communist Party of China took place in December 1978, which reset China's direction toward opening up to the world.
 

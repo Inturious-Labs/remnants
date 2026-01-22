@@ -10,7 +10,7 @@
     <span class="mx-1">&middot;</span>
     {{ .ReadingTime }} minute{{ if (ne .ReadingTime 1) }}s{{ end }} read
   </time>
-  <a class="absolute inset-0 text-[0px]" href="{{- .Permalink -}}">{{- .Title -}}</a>
+  <a class="absolute inset-0 text-[0px]" href="{{- .RelPermalink -}}">{{- .Title -}}</a>
 </section>
 {{- end -}}
 

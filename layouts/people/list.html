@@ -8,7 +8,7 @@
   <span class="text-xs antialiased opacity-60">
     {{ .Count }} {{ if eq .Count 1 }}story{{ else }}stories{{ end }}
   </span>
-  <a class="absolute inset-0 text-[0px]" href="{{- .Page.Permalink -}}">{{- .Page.Title -}}</a>
+  <a class="absolute inset-0 text-[0px]" href="{{- .Page.RelPermalink -}}">{{- .Page.Title -}}</a>
 </section>
 {{- end -}}
 

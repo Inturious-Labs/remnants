@@ -4,7 +4,7 @@ languageCode = "en"
 timeZone = "Asia/Shanghai"
 theme = "paper"
 enableRobotsTXT = true
-canonifyURLs = true
+canonifyURLs = false
 googleAnalytics = "G-HPDDF6YJ8K"
 
 [pagination]
@@ -39,7 +39,7 @@ googleAnalytics = "G-HPDDF6YJ8K"
 [menu]
   [[menu.main]]
     name = "Stories"
-    url = "/posts/"
+    url = "/stories/"
     weight = 10
   [[menu.main]]
     name = "People"

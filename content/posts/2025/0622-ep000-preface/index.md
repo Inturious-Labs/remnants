@@ -24,6 +24,11 @@ cities:
   - Gochica
   - Topolala
   - Yorkwen
+countries:
+  - Cathain
+  - Panja
+  - Marecia
+  - Wintersald
 ---
 
 ![A lone figure gazing at a dissolving cityscape](beach.jpg)

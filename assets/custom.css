@@ -134,3 +134,14 @@ a:hover {
 main {
     padding-top: 1.5rem !important;
 }
+
+/* Consistent taxonomy tag spacing on mobile */
+@media (max-width: 768px) {
+    .taxonomy-tags {
+        gap: 0.35rem !important;
+        margin-top: 0.35rem !important;
+    }
+    .taxonomy-tags:first-of-type {
+        margin-top: 0.75rem !important;
+    }
+}

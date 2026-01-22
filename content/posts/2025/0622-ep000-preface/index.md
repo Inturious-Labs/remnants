@@ -6,6 +6,8 @@ draft: false
 description: "Why I write The Remnants of Globalization"
 images:
   - beach.jpg
+people:
+  - Tavano
 ---
 
 ![A lone figure gazing at a dissolving cityscape](beach.jpg)

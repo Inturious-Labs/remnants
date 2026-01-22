@@ -42,6 +42,10 @@ googleAnalytics = "G-HPDDF6YJ8K"
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    name = "People"
+    url = "/people/"
+    weight = 15
+  [[menu.main]]
     name = "About"
     url = "/about/"
     weight = 20
@@ -51,6 +55,10 @@ googleAnalytics = "G-HPDDF6YJ8K"
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
+
+# Taxonomies for character pages
+[taxonomies]
+  person = "people"
 
 # Define URL links
 [permalinks]

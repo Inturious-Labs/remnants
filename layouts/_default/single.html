@@ -50,6 +50,9 @@
 
   <section>{{- .Content -}}</section>
 
+  <!-- Tip link -->
+  {{- partial "tip-link.html" . -}}
+
   <!-- Post Categories -->
   {{- if .Params.categories -}}
   <footer class="mt-12 flex flex-wrap">
